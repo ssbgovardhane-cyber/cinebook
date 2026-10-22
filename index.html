@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020"><title>CineBook — Movie Tickets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-icon">▶</span> cine<span>book</span></a>
+<div class="city-picker">📍 <select id="city"><option>Nagpur</option></select></div>
+<div class="top-actions"><button class="text-button" id="admin-open">Admin</button><a class="sign-in" href="#movies">Explore movies <span>↗</span></a></div></header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> YOUR NEXT MOVIE NIGHT STARTS HERE</div>
+  <h1>Big stories.<br><em>Big screen.</em></h1><p>Find your next favourite film and book the best seats in town.</p>
+  <a class="primary-button" href="#movies">Explore movies <span>→</span></a>
+  <div class="hero-stats"><div><strong>6+</strong><small>Movies to explore</small></div><div><strong>4</strong><small>Local cinemas</small></div><div><strong>Easy</strong><small>Seat selection</small></div></div></div>
+  <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="ticket-art"><div class="ticket-top">CINEBOOK <span>ADMIT ONE</span></div><div class="ticket-symbol">▶</div><div class="ticket-name">YOUR NEXT<br>FAVOURITE FILM</div><div class="ticket-bottom"><span>SCREEN 01</span><span>★★★★★</span></div></div><div class="floating-tag">✦ Movie magic awaits</div></div>
+</section>
+<section class="movie-section" id="movies"><div class="section-heading"><div><div class="eyebrow muted">NOW SHOWING</div><h2>Movies for every mood</h2></div><div class="filters"><label class="search-box">⌕ <input id="search" placeholder="Search movies..." aria-label="Search movies"></label><select id="language"><option value="">All languages</option><option>Hindi</option><option>English</option><option>Marathi</option></select></div></div>
+<div id="movie-grid" class="movie-grid"><div class="loading">Loading movies…</div></div></section>
+<section class="how-section"><div class="eyebrow muted">SIMPLE AS 1, 2, 3</div><h2>Movie night, sorted.</h2><div class="steps"><article><span>01</span><h3>Pick a movie</h3><p>Discover films and find a showtime that works for you.</p></article><article><span>02</span><h3>Choose your seats</h3><p>Pick your favourite spot with our interactive seat map.</p></article><article><span>03</span><h3>Get your ticket</h3><p>Confirm your demo booking and keep your ticket details handy.</p></article></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-icon">▶</span> cine<span>book</span></a><p>Made for movie lovers. <span>Demo booking experience · No real payments</span></p></footer>
+<div class="modal-backdrop hidden" id="modal"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="close" id="modal-close" aria-label="Close">×</button><div id="modal-content"></div></section></div>
+<div class="toast hidden" id="toast" role="status"></div>
+<script src="/app.js"></script>
+</body></html>
